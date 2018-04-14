@@ -1,0 +1,47 @@
+@startuml Aggregates
+title Aggregate 1
+Batch --{ Transaction
+
+class Batch {
+    +Batch()
+    +Transactions
+    +TotalAmount
+    +AddTransaction()
+    -RejectDuplicated()
+}
+
+class Transaction {
+    +Amount
+}
+newpage
+title Aggregate 2
+Gym --{ MontlyPackage
+
+class Gym {
+    +Gym()
+    +MontlyPackages
+    +AddMontlyPackage()
+    -RejectDuplicateMonthlyPackage()
+}
+
+class MontlyPackage {
+    +Name
+    +Price    
+}
+newpage
+title Aggregate 3
+Customer --* Address
+
+class Customer {
+    +Address
+    +MontlyPackage
+    +PackageName
+    +PackagePrice
+}
+
+class Address {
+    +City
+    +Province
+    +Street    
+}
+@enduml
