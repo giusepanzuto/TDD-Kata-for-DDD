@@ -29,5 +29,15 @@ namespace Kata.Tests.Unit
             sut.AddMonthlyPackage(new MonthlyPackage());
             Assert.Single(sut.MonthlyPackages);
         }
+
+        [Fact]
+        public void AddMonthlyPackageMethod_DuplicateInput_ThrowsException()
+        {
+            var sut = new Gym();
+            var monthlyPackage1 = new MonthlyPackage {Id = 1535235};
+            sut.AddMonthlyPackage(monthlyPackage1);
+            var ex = Assert.Throws<ArgumentException>(() => sut.AddMonthlyPackage(monthlyPackage1));
+            Assert.Equal("You cannot add a duplicate MonthlyPackage.", ex.Message);
+        }
     }
 }
