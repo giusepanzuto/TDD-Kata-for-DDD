@@ -1,4 +1,5 @@
 using Kata.Domain;
+using Kata.Domain.Entity;
 using Xunit;
 
 namespace Kata.Tests.Unit

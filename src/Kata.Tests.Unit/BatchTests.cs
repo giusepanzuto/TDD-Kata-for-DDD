@@ -1,5 +1,7 @@
 ﻿using System;
 using Kata.Domain;
+using Kata.Domain.Aggregate;
+using Kata.Domain.Entity;
 using Xunit;
 
 namespace Kata.Tests.Unit

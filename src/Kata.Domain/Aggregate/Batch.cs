@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Kata.Domain.Entity;
 
-namespace Kata.Domain
+namespace Kata.Domain.Aggregate
 {
     public class Batch : EntityBase
     {

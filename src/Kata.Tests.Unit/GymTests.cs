@@ -2,6 +2,8 @@ using System;
 using System.Linq;
 using Xunit;
 using Kata.Domain;
+using Kata.Domain.Aggregate;
+using Kata.Domain.Entity;
 
 namespace Kata.Tests.Unit
 {

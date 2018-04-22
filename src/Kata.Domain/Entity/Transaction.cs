@@ -1,4 +1,4 @@
-﻿namespace Kata.Domain
+﻿namespace Kata.Domain.Entity
 {
     public class Transaction : EntityBase
     {

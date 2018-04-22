@@ -1,5 +1,6 @@
 using System;
 using Kata.Domain;
+using Kata.Domain.ValueObject;
 using Xunit;
 
 namespace Kata.Tests.Unit {

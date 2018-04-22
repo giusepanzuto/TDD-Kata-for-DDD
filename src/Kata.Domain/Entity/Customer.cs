@@ -1,6 +1,8 @@
 using System;
+using Kata.Domain.Aggregate;
+using Kata.Domain.ValueObject;
 
-namespace Kata.Domain
+namespace Kata.Domain.Entity
 {
     public class Customer : EntityBase
     {
